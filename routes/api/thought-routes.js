@@ -22,7 +22,6 @@ router
     .put(updateThought)
     .delete(deleteThought)
 
-//TODO Create reaction routes
 router
     .route('/:thoughtId/reactions')
     .post(createReaction)
@@ -30,7 +29,7 @@ router
 router
     .route('/:thoughtId/reactions/:reactionId')
     .delete(deleteReaction)
-    
+
 
 
 module.exports = router;
