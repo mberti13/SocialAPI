@@ -1,6 +1,13 @@
 const { Schema, models, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
+
+
+// TODO: Create reaction schema 
+
+
+
+
 const ThoughtSchema = new Schema({
     thoughtText: {
         type: String,
