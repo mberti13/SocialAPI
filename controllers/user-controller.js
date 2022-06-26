@@ -1,13 +1,13 @@
 const { User } = require('../models');
 
 const userController = {
-    getAllUsers(req,res){
+   getAllUsers(req, res) {
         User.find({})
-        .then(dbUserData => res.json(dbUserData))
-        .catch(err =>{
-            console.log(err);
-            res.status(500).json(err);
-        })
+            .then(userData => res.json(userData))
+            .catch(err => {
+                console.log(err);
+                res.status(500).json(err)
+            })
     },
     getSingleUser({ params }, res){
         User.findOne({ _id: params.id })
