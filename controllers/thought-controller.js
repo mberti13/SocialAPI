@@ -76,3 +76,5 @@ const thoughtController ={
     } //TODO: Create reaction controls
 
 }
+
+module.exports = thoughtController;

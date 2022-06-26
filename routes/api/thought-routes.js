@@ -21,3 +21,6 @@ router
     .delete(deleteThought)
 
     //TODO Create reaction routes
+
+
+    module.exports = router;
